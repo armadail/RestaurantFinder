@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_view_title" type="id" />
+    <item name="text_view_address" type="id" />
+    <item name="info_layout" type="id" />
+    <item name="text_view_author" type="id" />
+    <item name="text_view_description" type="id" />
+</resources>
