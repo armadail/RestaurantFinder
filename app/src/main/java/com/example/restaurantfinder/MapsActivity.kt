@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.aallam.openai.client.OpenAI
+import com.android.volley.BuildConfig
 import com.example.restaurantfinder.PermissionUtils.PermissionDeniedDialog.Companion.newInstance
 import com.example.restaurantfinder.PermissionUtils.isPermissionGranted
 import com.example.restaurantfinder.databinding.ActivityMapsBinding
@@ -43,7 +44,6 @@ class MapsActivity : AppCompatActivity(),
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
 
-
     /*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,9 +75,7 @@ class MapsActivity : AppCompatActivity(),
 
         }
 
-
-
-
+        BuildConfig.BUILD_TYPE
 
     }
 
