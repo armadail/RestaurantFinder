@@ -46,16 +46,21 @@ message:
 BC Chau Veggie Express in Vancouver offers delicious and generous vegan and vegetarian options, such as the Golden Temple Soup. Despite a hiccup with undisclosed spice in a dish, the food quality and welcoming atmosphere shine. The Golden Temple Soup continues to impress with its flavors and large portion size.
  }
 '''
- ## Running the App
 
- 1. Clone this repo locally make sure you have the following APIs keys
- Maps and Places API key can be the same, make sure they are enabled in your google maps project
+## Running the App
 
- MAPS_API_KEY=AIz...
- PLACES_API_KEY=AIz...
- OPENAI_API_KEY=sk...
+1. **Clone the Repository**
+   Clone this repository locally.
 
- 2. Create a file called secrets.proprerties in the project directory and paste your api key inside
+2. **Set Up API Keys**
+   Ensure you have the following API keys:
+   - MAPS_API_KEY: Obtain from Google Cloud Console, ensure Maps and Places APIs are enabled.
+   - PLACES_API_KEY: Can be Same as above.
+   - OPENAI_API_KEY: API key for OpenAI.
+
+3. **Create Secrets File**
+   Create a file named `secrets.properties` in the project directory and paste your API keys inside.
+
 
 
   
