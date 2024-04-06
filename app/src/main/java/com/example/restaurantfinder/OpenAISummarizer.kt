@@ -11,6 +11,8 @@ import com.google.android.gms.maps.model.Marker
 import com.google.android.libraries.places.api.model.AuthorAttribution
 import com.google.android.libraries.places.api.model.Place
 import com.google.android.libraries.places.api.model.Review
+import kotlin.math.ln
+import kotlin.math.pow
 
 // openai sdk
 @OptIn(BetaOpenAI::class)
@@ -21,8 +23,8 @@ class OpenAISummarizer(private val openAI: OpenAI) {
         var prompt = "Summarize the following in under 50 words: "
         for (review in reviewList){
             prompt += review.text
+            Log.i(TAG,review.text)
         }
-        Log.i(TAG,prompt)
 
         val chatCompletionRequest = ChatCompletionRequest(
             model = ModelId("gpt-3.5-turbo"),
@@ -40,6 +42,8 @@ class OpenAISummarizer(private val openAI: OpenAI) {
 
         val chatMessage = openAI.chatCompletion(chatCompletionRequest).choices.first().message
             ?: throw NoChoiceAvailableException()
+
+        Log.i(TAG,chatMessage.content)
 
 
 
@@ -67,6 +71,12 @@ class OpenAISummarizer(private val openAI: OpenAI) {
         }
 
         Log.i(TAG1,updatedReviews[0].text.toString())
+        // implementation new rating scale based off requirement document
+        val V = ln(place.userRatingsTotal.toDouble())
+        val updatedRating =  -ln((1 - (place.rating/5)).pow(V))/4
+
+
+        Log.i(TAG1, updatedRating.toString())
 
         //copy over the old data
         val restaurantBuilder = Place.builder()
@@ -74,7 +84,7 @@ class OpenAISummarizer(private val openAI: OpenAI) {
             .setName(place.name)
             .setLatLng(place.latLng)
             .setAddress(place.address)
-            .setRating(place.rating)
+            .setRating(updatedRating)
             .setUserRatingsTotal(place.userRatingsTotal)
             .setReviews(updatedReviews)
 

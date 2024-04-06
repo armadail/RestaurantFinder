@@ -89,14 +89,14 @@ class MapsActivity : AppCompatActivity(),
 
 
 
-        val travel_sprite = LatLng(49.25,-123.12)
+        val travel_sprite = LatLng(49.35,-123.12)
         val zoomLevel = 12.0f
         val radius = 5000 // 5km radius
 
         val  cameraUpdate = CameraUpdateFactory.newLatLngZoom(travel_sprite, zoomLevel)
 
 
-        mMap.addMarker(MarkerOptions().position(travel_sprite).title("My Avatar").icon(bicycleIcon))
+       // mMap.addMarker(MarkerOptions().position(travel_sprite).title("My Avatar").icon(bicycleIcon))
         mMap.moveCamera(cameraUpdate)
 
 
@@ -147,7 +147,6 @@ class MapsActivity : AppCompatActivity(),
 
         val southWest = LatLng(lat - dy, lng - dx)
         val northEast = LatLng(lat + dy, lng + dx)
-
         val searchByTextRequest = SearchByTextRequest.builder("Spicy Vegetarian Food", placeFields)
             .setMaxResultCount(5)
             .setLocationRestriction(RectangularBounds.newInstance(southWest, northEast)).build()
@@ -226,11 +225,12 @@ class MapsActivity : AppCompatActivity(),
     }
     override fun onMyLocationButtonClick(): Boolean {
         Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show()
+        //TODO get user location and feed it into searcNearbyRestaurants funtction
         val goldenswan_lat = 49.2367
         val goldenswan_lng = -123.0654
         val goldenswan_dx = 0.1
         val goldenswan_dy = 0.1
-        drawSquare(goldenswan_lat,goldenswan_lng,goldenswan_dx,goldenswan_dy)
+        //drawSquare(goldenswan_lat,goldenswan_lng,goldenswan_dx,goldenswan_dy)
         searchNearbyRestaurants(goldenswan_lat,goldenswan_lng,goldenswan_dx,goldenswan_dy)
         return false
     }
