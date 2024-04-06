@@ -17,7 +17,7 @@ Where:
 - V: Number of reviewers
 
 ### GPT3.5 Based Summarizer
-Utilizing the power of GPT3.5, our app includes a summarizer that parses multiple reviews into a single concise description. By simulating a food reviewer role, it distills varied opinions into a comprehensive overview, enhancing user understanding.
+Utilizing GPT3.5, the app includes a summarizer that parses multiple reviews into a single concise description.
 
 Example Prompt:
 ```
