@@ -26,24 +26,38 @@ Example Prompt:
  role: You are a food reviewer that summarizes reviews in a short and concise manner
  message:
 Reviewer 1
- I came in here a couple days ago about an hour before closing and truly was skeptical because not everyone can make “good for you” food and it actually taste amazing. I got the Golden Temple Soup with brown rice & it was delicious! Also got the Coconut shake… and THAT is whats going to keep bringing me back! Such a clean atmosphere and definitely my new go-to in the neighborhood.
+ I came in here a couple days ago about an hour before closing and truly was skeptical because not everyone can make “good for you” food and it actually taste amazing.
+I got the Golden Temple Soup with brown rice & it was delicious! Also got the Coconut shake… and THAT is whats going to keep bringing me back!
+Such a clean atmosphere and definitely my new go-to in the neighborhood.
 
 Reviewer 2
- My absolute favorite vegan vegetarian spot in town, BC Chau Veggie Express is a true gem in Vancouver. Not only is the food incredibly delicious, but the portions are generous, ensuring you leave satisfied every single visit. Every dish is meticulously crafted with the freshest ingredients, and the consistency in quality and taste is simply unmatched. My kids also look forward to dining here, which says a lot about the family-friendly atmosphere and the universally appealing flavors. The staff deserves a shout-out too, always welcoming and attentive, making each dining experience even more special. Highly recommend to anyone seeking a top-notch veggie experience!
+ My absolute favorite vegan vegetarian spot in town, BC Chau Veggie Express is a true gem in Vancouver.
+Not only is the food incredibly delicious, but the portions are generous, ensuring you leave satisfied every single visit.
+Every dish is meticulously crafted with the freshest ingredients, and the consistency in quality and taste is simply unmatched.
+My kids also look forward to dining here, which says a lot about the family-friendly atmosphere and the universally appealing flavors.
+The staff deserves a shout-out too, always welcoming and attentive, making each dining experience even more special.
+Highly recommend to anyone seeking a top-notch veggie experience!
 
 Reviewer 3
  4.5* Food | 2.5* Service
- Our much-anticipated visit to this trendy restaurant took an unexpected turn. What was meant to be a delightful dinner became a disappointing experience when a spicy pepper, undisclosed in the dish's description, left my mouth ablaze. Despite my efforts to seek assistance, the staff seemed indifferent to my distress. I wish they had been more present and empathetic, as a small gesture could have made a significant difference.
- Nevertheless, the familiar golden temple dish was enjoyable, and while I couldn't fully taste the dish I ordered, my past experiences suggest their meals are typically delightful. Despite this hiccup, I still appreciate the restaurant's food quality.
+ Our much-anticipated visit to this trendy restaurant took an unexpected turn.
+What was meant to be a delightful dinner became a disappointing experience when a spicy pepper, undisclosed in the dish's description, left my mouth ablaze.
+Despite my efforts to seek assistance, the staff seemed indifferent to my distress.
+I wish they had been more present and empathetic, as a small gesture could have made a significant difference.
+Nevertheless, the familiar golden temple dish was enjoyable, and while I couldn't fully taste the dish I ordered, my past experiences suggest their meals are typically delightful.
+Despite this hiccup, I still appreciate the restaurant's food quality.
 
 Reviewer 4
- The aroma of this beautiful, family run business, with a conscious effort to make all their food healthy is definitely worth visiting. The owner greeted us with a smile and came to help us choose from the menu.
+ The aroma of this beautiful, family run business, with a conscious effort to make all their food healthy is definitely worth visiting.
+ The owner greeted us with a smile and came to help us choose from the menu.
  We ordered the Golden Temple soup which stunned our taste buds, the Nonia Crispy Rolls that were incredible delicious, the chips with sauce and the broth in the Rice Fields Bowl was perfect.
  They even made the effort of making my birthday special. I would definitely bring my friends here.
 
 Reviwer 5
- I ordered the golden temple soup with noodles and this soup is honestly so good. The portion size is also gigantic and I couldn't even finish it! They have crunchy vegetables and yummy noodles with a rich broth. If you order this you'll probably have enough leftovers for another meal.
- Overall I would love to visit again!!
+ I ordered the golden temple soup with noodles and this soup is honestly so good.
+The portion size is also gigantic and I couldn't even finish it! They have crunchy vegetables and yummy noodles with a rich broth.
+If you order this you'll probably have enough leftovers for another meal.
+Overall I would love to visit again!!
 
 }
 ```
