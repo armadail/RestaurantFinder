@@ -68,7 +68,10 @@ Example Response:
 ```
 response:{
 message:
-BC Chau Veggie Express in Vancouver offers delicious and generous vegan and vegetarian options, such as the Golden Temple Soup. Despite a hiccup with undisclosed spice in a dish, the food quality and welcoming atmosphere shine. The Golden Temple Soup continues to impress with its flavors and large portion size.
+BC Chau Veggie Express in Vancouver offers delicious and generous vegan and vegetarian options,
+such as the Golden Temple Soup. Despite a hiccup with undisclosed spice in a dish,
+the food quality and welcoming atmosphere shine.
+The Golden Temple Soup continues to impress with its flavors and large portion size.
  }
 ```
 
