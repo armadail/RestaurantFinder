@@ -4,6 +4,9 @@
  ## App Demo
 
 
+https://github.com/armadail/RestaurantFinder/assets/45216758/33c7e6ba-7117-44d2-8080-b4c36ea17717
+
+
  ## Features
 ### New Scoring Rating System
 Introducing a novel scoring rating system based on the probability of a positive review. The formula for calculating the score (S) is as follows:
