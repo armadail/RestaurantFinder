@@ -44,25 +44,9 @@ class MapsActivity : AppCompatActivity(),
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
 
-    /*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMapsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
-
-        if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(),"AIzaSyCKhs-dt7niVABhyIvOrMJwjqjCIk7cAMM");
-        }
-    }*/
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // use viewbinding method in future:
+        // TODO: use viewbinding method in future:
         // binding = ActivityMapsBinding.inflate(layoutInflater)
         // setContentView(binding.root)
         setContentView(R.layout.my_location_demo)
@@ -70,9 +54,9 @@ class MapsActivity : AppCompatActivity(),
             supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(this)
         //initialize places sdk
+        // TODO: retrieve API key through secrets.gradle
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(),"AIzaSyCKhs-dt7niVABhyIvOrMJwjqjCIk7cAMM");
-
+            Places.initialize(getApplicationContext(),"PLACESAPIKEY");
         }
 
         BuildConfig.BUILD_TYPE
@@ -286,7 +270,8 @@ class MapsActivity : AppCompatActivity(),
     companion object {
         private const val TAG = "MapsActivity"
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
-        private val GPTsummarizer = OpenAISummarizer(OpenAI("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"))
+        // TODO: retrieve API key through secrets.gradle
+        private val GPTsummarizer = OpenAISummarizer(OpenAI("OPENAISDKKEY"))
 
     }
 
